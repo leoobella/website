@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leonardo Bellani</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Background Layer -->
+  <div class="background-layer">
+    <!-- Navbar and Profile Section -->
+    <aside class="navbar-layer">
+      <div class="profile">
+        <img src="img/avatar.jpeg" alt="Avatar" class="avatar">
+        <h1 class="name">Leonardo Bellani</h1>
+        <p class="tagline">Dynamic Developer for SwiftUI & Web Applications</p>
+      </div>
+      <nav class="menu">
+        <ul>
+
+            <button class="cta-button" onclick="switchContent('contacts')" >Contact me</button>
+
+            <li class="menu-item active" onclick="switchContent('about')">
+                <a href="#about">
+                    <span class="material-symbols-outlined">dashboard</span> About me
+                </a>
+            </li>
+            
+            <li class="menu-item" onclick="switchContent('portfolio')">
+                <a href="#portfolio">
+                    <span class="material-symbols-outlined">work</span> Portfolio
+                </a>
+            </li>
+            <!--
+                <a href="#contacts">
+                    <span class="material-symbols-outlined">contacts</span> Contacts
+                </a>
+            </li>
+
+            <li class="menu-item" onclick="switchContent('services')">
+                <a href="#services">
+                    <span class="material-symbols-outlined">design_services</span> Services
+                </a>
+            </li>
+            -->
+        </ul>
+      </nav>
+      
+    </aside>
+    <!-- Content Area -->
+    <main class="content-area">
+      
+        <div id="about" class="content-section active">
+            <section class="about-me">
+                <h1><strong>iOS Developer & Front-End Web Specialist</strong></h1>
+
+                <p>
+                  My name is Leonardo Bellani, and I am an iOS app and front-end web developer based in Emilia Romagna, Italy. 
+                  I have a solid technical background, thanks to my diploma in computer science from a technical school, and 
+                  hands-on experience in software development.
+                </p>
+                <br>
+
+                <h2>Key Skills:</h2>
+                <ul>
+                  <li><strong>iOS Development with SwiftUI:</strong> I create modern and intuitive applications for the Apple ecosystem, with a focus on design and user experience.</li>
+                  <li><strong>Front-End Web Development:</strong> I build functional and responsive web interfaces using technologies such as HTML, CSS, JavaScript, and PHP.</li>
+                </ul>
+                <br>
+
+                <p>
+                  During my studies, I also gained proficiency in languages like C++ and Java, which provided me with a strong foundation to tackle even complex projects. 
+                  Beyond the technical aspect, I pay great attention to design, UI/UX, and the overall functionality of the projects, ensuring they fully meet client requirements.
+                </p>
+                <br>
+              
+                <h2>Why Choose Me?</h2>
+                <ul>
+                  <li><strong>Professionalism and Precision:</strong> I deliver detail-oriented work, meeting deadlines consistently.</li>
+                  <li><strong>Client-Oriented Approach:</strong> I strive to thoroughly understand project needs to provide tailored solutions.</li>
+                  <li><strong>Continuous Learning:</strong> I am currently studying digital marketing to enhance my skills and combine technology with effective strategies.</li>
+                </ul>
+                <br>
+              
+                <h2>What I Offer:</h2>
+                <ul>
+                  <li>Custom iOS app development, from concept to final product.</li>
+                  <li>Creation of modern and high-performing front-end websites.</li>
+                  <li>Collaboration via Upwork or private agreements.</li>
+                </ul>
+                <br>
+
+                <p>
+                  I am young, motivated, and ready to take on challenges to turn your ideas into digital reality. 
+                  Contact me to discuss your next project!
+                </p>
+              </section>    
+        </div>
+      
+        <div id="contacts" class="content-section">
+            <section id="contact-form">
+                <h1>Contact Me</h1>
+                <p>Feel free to reach out to me using this form to share your needs or concerns. I’ll be more than happy to do everything I can to assist you</p>
+                
+                <form action="mailto:leo.bella.mo@gmail.com" method="POST" enctype="text/plain">
+                  <label for="name">Your Name:</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                  
+                  <label for="message">Your Message:</label>
+                  <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+                  
+                  <button type="submit" class="cta-button">Send Email</button>
+                </form>
+            </section>
+        </div>
+      
+        <div id="portfolio" class="content-section">
+            <div class="portfolio-section">
+
+                <div class="portfolio-item">
+                    <div>
+                        <h1>ToDo List App</h1>
+                        <p>Leonardo Bellani develops applications with a modern and captivating UI/UX design, seamlessly integrated with native iOS systems to ensure exceptional performance. With a flexible approach and meticulous attention to detail, he transforms every idea into an intuitive, functional, and highly optimized app.</p>
+                        <br></br>
+                        <p>The app showcased here is a concrete example of my workflow, illustrating the method I use to create intuitive and efficient applications. From the initial concept to the final product, I emphasize seamless integration, user-centered design, and performance optimization.</p>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="carousel-container">
+                        <button class="carousel-button prev" onclick="prevSlide()">
+                            <span class="material-symbols-outlined">chevron_left</span>
+                        </button>
+                        <div class="carousel">
+                            <div class="carousel-item">
+                                <img src="img/one.png" alt="ToDo List App Screenshot">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/two.png" alt="ToDo List App Screenshot">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/three.png" alt="ToDo List App Screenshot">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/four.png" alt="ToDo List App Screenshot">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/five.png" alt="ToDo List App Screenshot">
+                            </div>
+                        </div>
+                        <button class="carousel-button next" onclick="nextSlide()">
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <h1>Book a Table</h1>
+                    <p>
+                        Book a Table - UI for Restaurant Reservations
+                        This intuitive UI allows users to book a table by specifying the reservation name, the number of people, and their phone number.
+                        Designed with SwiftUI, it features a modern and responsive design with a strong focus on accessibility and ease of use.
+                        <br>
+                        <strong>Technologies Used:</strong> SwiftUI, form input logic, and validation.
+                        <br>
+                        <strong>Features:</strong> Increment/decrement for the number of people, phone number validation, dark theme.
+                    </p>
+                    <div class="spacer"></div>
+                    <img src="img/pren.png" alt="Book a Table Screenshot">
+                </div>
+              
+                <div class="portfolio-item">
+                    <h1>Interactive Map</h1>
+                    <p>
+                        Interactive Map - Localization with Apple and Google Maps
+                        A simple and modern interface to view the current location and allow users to open the map directly in Apple Maps or Google Maps.
+                        Designed to maximize compatibility and enhance the user experience.
+                        <br>
+                        <strong>Technologies Used:</strong> SwiftUI, MapKit integration, and deep links for Google Maps.
+                        <br>
+                        <strong>Features:</strong> Custom map visualization, two buttons to open the location on different platforms.
+                    </p>
+                    <div class="spacer"></div>
+                    <img src="img/map.png" alt="Interactive Map Screenshot">     
+                </div>
+
+            </div>
+        </div>
+
+        <div id="services" class="content-section">
+            <h1>Services</h1>
+        </div>
+
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
