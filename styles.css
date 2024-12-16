@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Font base: 1rem ~ 16px (valore di default); */
 body {
     font-family: 'Roboto', sans-serif; 
     display: flex; 
@@ -361,5 +360,113 @@ p {
 
     .carousel-item img {
         border-radius: 0.625rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Contenitore principale con Flexbox */
+    .background-layer {
+        display: flex; /* Abilita Flexbox */
+        flex-direction: column; /* Stack verticale */
+        min-height: 100vh; /* Occupa tutta la schermata */
+    }
+
+    /* Navbar con gerarchia */
+    .navbar-layer {
+        height: 25vh; /* Imposta l'altezza al 50% della viewport */
+        width: 93%; /* Imposta la larghezza al 90% */
+        margin: 2rem auto; /* Centra il contenitore */
+        padding: 0.5rem; /* Riduci il padding */
+        border-radius: 1rem; /* Leggermente meno arrotondato */
+    }
+
+    /* Profilo */
+    .profile {
+        display: flex;
+        flex-direction: row; /* Allinea gli elementi orizzontalmente */
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .avatar {
+        width: 4rem; /* Dimensione ridotta */
+        height: 4rem;
+        border-radius: 50%;
+        border: 0.25rem solid #F5F749;
+    }
+
+    .name {
+        font-size: 1rem;
+        color: #F5F749;
+    }
+
+    .tagline {
+        display: none; /* Nasconde la tagline */
+    }
+
+    .menu {
+        display: flex; /* Attiva Flexbox */
+        flex-direction: row; /* Dispone i figli in orizzontale */
+        justify-content: center; /* Centra i button orizzontalmente */
+        align-items: center; /* Centra verticalmente */
+        gap: 0.5rem; /* Aggiunge spazio tra i button */
+        width: 100%;
+    }
+    
+    .menu ul {
+        list-style: none; /* Rimuove i pallini */
+        display: flex; /* Dispone in Flexbox */
+        flex-direction: row; /* Disposizione orizzontale */
+        justify-content: center; /* Centra orizzontalmente */
+        gap: 0.5rem; /* Spaziatura tra i button */
+        padding: 0;
+    }
+    
+    .menu-item {
+        margin: 0; /* Rimuove eventuale margine verticale */
+    }
+
+    .menu-item a {
+        display: flex; /* Assicura che icona e testo siano su una riga */
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra orizzontalmente */
+        white-space: nowrap; /* Impedisce il testo di andare a capo */
+        padding: 0.5rem 1rem; /* Riduci il padding se necessario */
+        font-size: 0.875rem; /* Riduci leggermente la dimensione del font */
+    }
+
+    .menu-item a:hover {
+        background-color: #FFD700;
+        color: #333333;
+    }
+
+    /* Bottone CTA */
+    .cta-button {
+        margin-top: 0.5rem;
+        background-color: #F5F749;
+        color: #333333;
+        font-size: 0.875r;
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .cta-button:hover {
+        transform: scale(1.05);
+    }
+
+    /* Content Area con padding dinamico */
+    .content-area {
+        flex: 2; /* Occupa più spazio rispetto alla navbar */
+        margin-top: 0; /* Nessun margine superiore */
+        padding: 1rem;
+        background-color: #99C1B9;
+        border-radius: 1.5rem;
+        box-shadow: 0 0.375rem 0.9375rem rgba(0, 0, 0, 0.1);
     }
 }
