@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Roboto', sans-serif; 
     display: flex; 
@@ -13,17 +12,16 @@ body {
     font-size: 1rem;
     background-color: black;
 }
-
-/* Contenitore principale */
-.background-layer {
+.background-layer {                 /* Contenitore principale */
     display: flex;
     flex: 1;
     min-height: 100vh;
     width: 100%;
 }
 
-/* Navbar Layer */
-.navbar-layer {
+
+
+.navbar-layer {                     /* Navbar */
     flex: 0 0 20vw; 
     background-color: #F24236;
     border-radius: 1.875rem;
@@ -36,10 +34,10 @@ body {
     min-width: 5rem;
 }
 .profile {
-    display: flex;           /* Abilita Flexbox */
-    flex-direction: column;  /* Incolonna i figli verticalmente */
-    align-items: center;     /* Centra gli elementi orizzontalmente */
-    text-align: center;      /* Allinea il testo al centro */
+    display: flex;           
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;      
     margin-bottom: 1.25rem;
 }
 .avatar {
@@ -58,40 +56,6 @@ body {
     font-size: 1rem;
     color: #99C1B9;
 }
-
-/* CALL TO ACTION BUTTON */
-.cta-button {
-    margin-top: 1.25rem;
-    margin-bottom: 0.0625rem;
-    background-color: #F5F749; 
-    color: #F24236;
-    font-size: 1.125rem; 
-    border: none; 
-    border-radius: 0.9375rem; 
-    padding: 0.5rem 1.5rem; 
-    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.2); 
-    cursor: pointer; 
-    transition: all 0.2s ease;
-
-    width: 100%;
-    text-align: center;     
-    box-sizing: border-box;
-}
-.cta-button:hover {
-    background-color: #FFD700;
-    transform: scale(1.05);
-    box-shadow: 0 0.375rem 0.5rem rgba(0, 0, 0, 0.3);
-}
-.cta-button:active {
-    transform: scale(0.95);
-    box-shadow: 0 0.1875rem 0.3125rem rgba(0, 0, 0, 0.2); 
-}
-.cta-button:focus {
-    outline: 0.125rem solid #FFD700; 
-    outline-offset: 0.1875rem; 
-}
-
-/* Menu */
 .menu {
     width: 100%;
 }
@@ -116,8 +80,6 @@ body {
     background-color: #99C1B9; 
     color: #ffffff;
 }
-
-/* Symbol Icons */
 .material-symbols-outlined {
     font-size: 2.5rem; 
     color: #ffffff; 
@@ -126,8 +88,9 @@ body {
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
-/* Content Area */
-.content-area {
+
+
+.content-area {                     /* Content Area */
     flex: 1;
     background-color: #99C1B9;
     border-radius: 1.875rem;
@@ -136,7 +99,6 @@ body {
     box-shadow: 0 0.375rem 0.9375rem rgba(0, 0, 0, 0.1);
     overflow: auto;
 }
-
 h1 {
     font-size: 2.5rem; 
     color: #F24236;
@@ -150,7 +112,6 @@ p {
     line-height: 1.3; 
     color: #555555;
 }
-
 .content-section {
     display: none;
 }
@@ -158,25 +119,25 @@ p {
     display: block;
 }
 
-/* Portfolio Section */
-.portfolio-section {
+
+.portfolio-section {            /* Portfolio */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
     gap: 1rem; 
     margin-top: 1rem;
 }
 .portfolio-item {
-    display: flex; /* Abilita Flexbox */
-    flex-direction: column; /* Dispone gli elementi in verticale */
-    gap: 1rem; /* Distanza tra gli elementi */
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem; 
     padding: 1rem;
     border-radius: 1rem;
     background-color: black;
 }
 
-/* Lo Spacer */
+
 .spacer {
-    flex-grow: 1; /* Occupa tutto lo spazio verticale disponibile */
+    flex-grow: 1; 
 }
 .portfolio-item:hover {
     transform: translateY(-0.125rem);
@@ -410,8 +371,8 @@ p {
         flex-direction: row; /* Dispone i figli in orizzontale */
         justify-content: center; /* Centra i button orizzontalmente */
         align-items: center; /* Centra verticalmente */
-        gap: 0.5rem; /* Aggiunge spazio tra i button */
-        width: 100%;
+        gap: 0.3rem; /* Aggiunge spazio tra i button */
+        width: 90%;
     }
     
     .menu ul {
@@ -419,7 +380,7 @@ p {
         display: flex; /* Dispone in Flexbox */
         flex-direction: row; /* Disposizione orizzontale */
         justify-content: center; /* Centra orizzontalmente */
-        gap: 0.5rem; /* Spaziatura tra i button */
+        gap: 0.3rem; /* Spaziatura tra i button */
         padding: 0;
     }
     
@@ -432,7 +393,7 @@ p {
         align-items: center; /* Centra verticalmente */
         justify-content: center; /* Centra orizzontalmente */
         white-space: nowrap; /* Impedisce il testo di andare a capo */
-        padding: 0.5rem 1rem; /* Riduci il padding se necessario */
+        padding: 0.5rem 0.5rem; /* Riduci il padding se necessario */
         font-size: 0.875rem; /* Riduci leggermente la dimensione del font */
     }
 
