@@ -398,13 +398,11 @@ p {
         border: 0.25rem solid #F5F749;
     }
 
-    .name {
-        font-size: 1rem;
+    .name{
+        display: block; /* Rendi visibili */
+        font-size: 1rem; /* Dimensione font ridotta */
+        text-align: center;
         color: #F5F749;
-    }
-
-    .tagline {
-        display: none; /* Nasconde la tagline */
     }
 
     .menu {
@@ -464,9 +462,27 @@ p {
     .content-area {
         flex: 2; /* Occupa più spazio rispetto alla navbar */
         margin-top: 0; /* Nessun margine superiore */
-        padding: 1rem;
+        padding: 1.8rem;
         background-color: #99C1B9;
         border-radius: 1.5rem;
         box-shadow: 0 0.375rem 0.9375rem rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-container {
+        max-width: 70%; /* Permette al contenitore di adattarsi alla larghezza dello schermo */
+        margin: 0 auto;
+    }
+
+    .carousel-item img {
+        width: 70%; /* L'immagine occupa tutta la larghezza del contenitore */
+        height: auto; /* Mantiene le proporzioni dell'immagine */
+        object-fit: contain; /* Garantisce che l'immagine sia visibile senza deformazioni */
+        border-radius: 0.5rem; /* Mantiene gli angoli arrotondati */
+    }
+
+    .carousel-button {
+        width: 2rem; /* Ridimensiona i pulsanti per schermi piccoli */
+        height: 2rem;
+        font-size: 1rem;
     }
 }
