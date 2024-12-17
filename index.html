@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leonardo Bellani</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo Bellani</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="img/avatar.jpeg">
 </head>
 
 <body>
-  <!-- Background Layer -->
+
   <div class="background-layer">
-    <!-- Navbar and Profile Section -->
+
     <aside class="navbar-layer">
       <div class="profile">
         <img src="img/avatar.jpeg" alt="Avatar" class="avatar">
@@ -22,7 +23,11 @@
       <nav class="menu">
         <ul>
 
-            <button class="cta-button" onclick="switchContent('contacts')" >Contact me</button>
+            <li class="menu-item" onclick="switchContent('contacts')">
+                <a href="#about">
+                    <span class="material-symbols-outlined">contacts_product</span> Contact me
+                </a>
+            </li>
 
             <li class="menu-item active" onclick="switchContent('about')">
                 <a href="#about">
@@ -195,6 +200,10 @@
 
     </main>
   </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
   <script src="script.js"></script>
 </body>
 
